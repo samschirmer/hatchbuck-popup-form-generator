@@ -39,7 +39,7 @@ function parseForm($hb_code) {
 #	RETURNS tha hash 
 #
 #################################################
-function createForm($title, $pairs) {
+function createForm($title, $button, $pairs) {
 	$form_code['action'] = "<form action='https://app.hatchbuck.com/onlineForm/submit.php' method='POST'>";
 	$form_code['title'] = "\t<span style='font-size:18px;font-family:sans-serif;'>$title</span>";
 
@@ -62,7 +62,7 @@ function createForm($title, $pairs) {
 			$form_code["simple_spc"] = "\t<input style='min-width:80%;margin:3px;padding:5px;' name='$name' value='$value' type='hidden' />";
 		}			
 	}
-	$form_code['submit'] = "\t<button style='min-width:80%;margin:3px;padding:5px;' id='pop-submit' type='submit'>Submit</button>\n</form>";
+	$form_code['submit'] = "\t<button style='min-width:80%;margin:3px;padding:5px;' id='pop-submit' type='submit'>$button</button>\n</form>";
 	return $form_code;
 }
 
@@ -102,6 +102,10 @@ function newPaste() {
 				<tr>
 					<td>Form Title</td>
 					<td><input name="form_title" placeholder="Subscribe!" /></td>
+				</tr>
+				<tr>
+					<td>Button Text</td>
+					<td><input name="button_text" placeholder="Submit" /></td>
 				</tr>
 				<tr>
 					<td>Hatchbuck Form Code</td>

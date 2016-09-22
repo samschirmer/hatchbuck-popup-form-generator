@@ -16,6 +16,12 @@ if ((isset($_POST['hb_code'])) && ($_POST['hb_code'] != '')) {
 		$form_title = 'Subscribe!';
 	}
 
+	if ((isset($_POST['button_text'])) && ($_POST['button_text'] != '')) {
+		$button_text = $_POST['button_text'];
+	} else {
+		$button_text = 'Submit';
+	}
+
 	if ((isset($_POST['tracking_code'])) && ($_POST['tracking_code'] != '')) {
 		$tracking_code = $_POST['tracking_code'];
 	}
@@ -23,7 +29,7 @@ if ((isset($_POST['hb_code'])) && ($_POST['hb_code'] != '')) {
 	# Getting inputs
 	$inputs = parseForm($_POST['hb_code']);
 	# Generating new form code
-	$new_form_code = createForm($form_title, $inputs);
+	$new_form_code = createForm($form_title, $button_text, $inputs);
 	# Getting widget code
 	$widget_code = getWidget($new_form_code, $tracking_code);
 

@@ -51,18 +51,18 @@ function createForm($title, $button, $pairs) {
 		} elseif (substr($name, 3, 5) == 'email') {
 			$form_code['email'] = "\t<input style='min-width:80%;margin:3px;padding:5px;' id='pop-email' name='$name' placeholder='Email' />";
 		} elseif (substr($name, 0, 6) == 'formID') {
-			$form_code["form_id"] = "\t<input style='min-width:80%;margin:3px;padding:5px;' name='$name' value='$value' type='hidden' />";
+			$form_code["form_id"] = "\t<input name='$name' value='$value' type='hidden' />";
 		} elseif (substr($name, 0, 22) == 'enableServerValidation') {
-			$form_code["server_validation"] = "\t<input style='min-width:80%;margin:3px;padding:5px;' name='$name' value='$value' type='hidden' />";
+			$form_code["server_validation"] = "\t<input name='$name' value='$value' type='hidden' />";
 		} elseif (substr($name, 0, 17) == 'enable303Redirect') {
-			$form_code["303_redirect"] = "\t<input style='min-width:80%;margin:3px;padding:5px;' name='$name' value='$value' type='hidden' />";
+			$form_code["303_redirect"] = "\t<input name='$name' value='$value' type='hidden' />";
 		} elseif (substr($name, 0, 7) == 'website') {
-			$form_code["anti_spam"] = "\t<input style='min-width:80%;margin:3px;padding:5px;' name='$name' value='$value' type='hidden' />";
+			$form_code["anti_spam"] = "\t<input name='$name' value='$value' type='hidden' />";
 		} elseif (substr($name, 0, 10) == 'simple_spc') {
-			$form_code["simple_spc"] = "\t<input style='min-width:80%;margin:3px;padding:5px;' name='$name' value='$value' type='hidden' />";
+			$form_code["simple_spc"] = "\t<input name='$name' value='$value' type='hidden' />";
 		}			
 	}
-	$form_code['submit'] = "\t<button style='min-width:80%;margin:3px;padding:5px;' id='pop-submit' type='submit'>$button</button>\n</form>";
+	$form_code['submit'] = "\t<button style='min-width:80%;margin:3px;padding:5px;color:#" . $button['text_color'] . ";background-color:#" . $button['color'] . ";' id='pop-submit' type='submit'>" . $button['text'] . "</button>\n</form>";
 	return $form_code;
 }
 
@@ -92,7 +92,7 @@ function getWidget($form_code, $tracking_code) {
 #################################################
 function newPaste() {
 	return '
-		<h1>Make sure to use the PLAIN HTML embed code!</h1>
+		<h1>Pop-up form generator</h1><h2>Please use the PLAIN HTML embed code!</h2>
 		<form action="#" method="post">
 			<table class="paste_input">
 				<tr>
@@ -102,10 +102,14 @@ function newPaste() {
 				<tr>
 					<td>Form Title</td>
 					<td><input name="form_title" placeholder="Subscribe!" /></td>
-				</tr>
-				<tr>
 					<td>Button Text</td>
 					<td><input name="button_text" placeholder="Submit" /></td>
+				</tr>
+				<tr>
+					<td>Button Hex Color</td>
+					<td><input name="button_color" value="FFFFFF" /></td>
+					<td>Button Text Hex Color</td>
+					<td><input name="button_text_color" value="000000" /></td>
 				</tr>
 				<tr>
 					<td>Hatchbuck Form Code</td>
@@ -113,9 +117,71 @@ function newPaste() {
 			</table>
 			<textarea name="hb_code" placeholder="Paste Hatchbuck code here"></textarea>
 			<br /><br />
-			<br />
 			<button type="submit">Generate Code</button>
 		</form>
+	';
+}
+
+#################################################
+#
+#	FUNCTION newStrip
+# Loads an input form for new visitors to the page
+#
+#################################################
+function newStrip() {
+	return '
+		<h1>Strip form code</h1><h2>Please use the PLAIN HTML embed code!</h2>
+		<form action="#" method="post">
+			<textarea name="hb_code" placeholder="Paste Hatchbuck code here"></textarea>
+			<br /><br />
+			<button type="submit">Strip Code</button>
+		</form>
+	';
+}
+
+#################################################
+#
+#	FUNCTION stripForm
+# Takes input hash and spits out a stripped 
+# version of the code
+#
+#################################################
+function stripForm($pairs) {
+	$form_code['action'] = "<form action='https://app.hatchbuck.com/onlineForm/submit.php' method='POST'>";
+	foreach ($pairs as $name => $value) {
+		if (substr($name, 0, 6) == 'formID') {
+			$form_code["form_id"] = "\t<input name='$name' value='$value' type='hidden' />";
+		} elseif (substr($name, 0, 22) == 'enableServerValidation') {
+			$form_code["server_validation"] = "\t<input name='$name' value='$value' type='hidden' />";
+		} elseif (substr($name, 0, 17) == 'enable303Redirect') {
+			$form_code["303_redirect"] = "\t<input name='$name' value='$value' type='hidden' />";
+		} elseif (substr($name, 0, 7) == 'website') {
+			$form_code["anti_spam"] = "\t<input name='$name' value='$value' type='hidden' />";
+		} elseif (substr($name, 0, 10) == 'simple_spc') {
+			$form_code["simple_spc"] = "\t<input name='$name' value='$value' type='hidden' />";
+		} else {			
+			$form_code[$name] = "\t<input name='$name' value='$value' />";
+		}
+	}
+
+	$form_code['submit'] = "\t<button type='submit'>Submit</button>\n</form>";
+
+	$form = implode("\n", $form_code);
+	return $form;
+}
+
+#################################################
+#
+#	FUNCTION getNav
+# Loads navbar
+#
+#################################################
+function getNav() {
+	return '
+	<div id="navbar">
+		<div class="link"><a href="index.php">Pop-up Generator</a></div>
+		<div class="link"><a href="strip.php">Strip Form Code</a></div>
+	</div>
 	';
 }
 ?>

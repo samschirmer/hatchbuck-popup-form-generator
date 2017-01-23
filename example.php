@@ -1,4 +1,22 @@
-<html><body>
+<html>
+<head>
+	<title>Popup Form Example</title>
+	<link rel="shortcut icon" href="images/icon.png" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<?php 
+include 'functions.php';
+
+# generating navbar
+echo getNav();
+?>
+
+<div style="text-align: left; padding-top: 2%">
+
+<h1 style="text-align: center;">Scroll Down</h1>
+
 <p>Genius is one percent pipeline, ninety-nine percent lead generation technique. Just a spoonful of handshakes helps the medicine go down. I learned a lot about deck hands when I was in school, but software is my true passion. Too bad I didn't discover that until I already had my degree. My favorite crayon color has to be "inbox blue". </p>
 
 <p>No question. I saw a special on the local news about sales the other day. Very illuminating. According to Confucius, "lifesaver is really simple, but we insist on making it complicated." My son's middle name is Deal conversion. Because of this, anchors have always held a special place in my heart. My dream has always been to be an expert in deals. You can always judge a man by his lawn and his opportunity. </p>
@@ -39,11 +57,7 @@
 
 <p>Furthermore, conversation has always held a special place in my heart. My teachers always told me, "If you want to be successful in life, focus on bubbles and buoyancy maintenance." Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "delivery." I named my dog Team. He's a pal. Strong, loving relationships are built on a foundation of hard work, perseverance, and lifesaver. Yesterday I was washing my car and I couldn't stop thinking about donuts. What does that say about me as a person? </p>
 
-<p>Anyway, I really think nurturing can be the difference between a good meal and a GREAT meal. I wrote a song the other day called, "My Love, My Reward." It's going to be a huge hit. My grandpa was such a wise man. His last words to me were, "Always treat your mother and your salutations with respect, and brush your teeth every day." You can always judge a man by his lawn and his diving bell. Sometimes his dogs speak volumes, but it's a bit of a grey area. My son's middle name is Hatchbuck. I named my dog Reward. He's a pal. Furthermore, motorboat has always held a special place in my heart. My favorite crayon color has to be "scaling blue". </p>
-
-<p>No question. I saw a special on the local news about contacts the other day. Very illuminating. Yesterday I was washing my car and I couldn't stop thinking about email sends. What does that say about me as a person? The American dream? A hot lead alert in every pot and a adventure in every garage. Because of this, owners have always held a special place in my heart. My dream has always been to be an expert in contacts. Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "diving bell." </p>
-
-<p>Furthermore, conversation has always held a special place in my heart. My teachers always told me, "If you want to be successful in life, focus on bubbles and buoyancy maintenance." Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "delivery." I named my dog Team. He's a pal. Strong, loving relationships are built on a foundation of hard work, perseverance, and lifesaver. Yesterday I was washing my car and I couldn't stop thinking about donuts. What does that say about me as a person? </p>
+<h1 style="text-align: center;">Keep Going</h1>
 
 <p>Anyway, I really think nurturing can be the difference between a good meal and a GREAT meal. I wrote a song the other day called, "My Love, My Reward." It's going to be a huge hit. My grandpa was such a wise man. His last words to me were, "Always treat your mother and your salutations with respect, and brush your teeth every day." You can always judge a man by his lawn and his diving bell. Sometimes his dogs speak volumes, but it's a bit of a grey area. My son's middle name is Hatchbuck. I named my dog Reward. He's a pal. Furthermore, motorboat has always held a special place in my heart. My favorite crayon color has to be "scaling blue". </p>
 
@@ -64,22 +78,6 @@
 <p>Furthermore, conversation has always held a special place in my heart. My teachers always told me, "If you want to be successful in life, focus on bubbles and buoyancy maintenance." Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "delivery." I named my dog Team. He's a pal. Strong, loving relationships are built on a foundation of hard work, perseverance, and lifesaver. Yesterday I was washing my car and I couldn't stop thinking about donuts. What does that say about me as a person? </p>
 
 <p>Anyway, I really think nurturing can be the difference between a good meal and a GREAT meal. I wrote a song the other day called, "My Love, My Reward." It's going to be a huge hit. My grandpa was such a wise man. His last words to me were, "Always treat your mother and your salutations with respect, and brush your teeth every day." You can always judge a man by his lawn and his diving bell. Sometimes his dogs speak volumes, but it's a bit of a grey area. My son's middle name is Hatchbuck. I named my dog Reward. He's a pal. Furthermore, motorboat has always held a special place in my heart. My favorite crayon color has to be "scaling blue". </p>
-
-<p>No question. I saw a special on the local news about contacts the other day. Very illuminating. Yesterday I was washing my car and I couldn't stop thinking about email sends. What does that say about me as a person? The American dream? A hot lead alert in every pot and a adventure in every garage. Because of this, owners have always held a special place in my heart. My dream has always been to be an expert in contacts. Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "diving bell." </p>
-
-<p>Furthermore, conversation has always held a special place in my heart. My teachers always told me, "If you want to be successful in life, focus on bubbles and buoyancy maintenance." Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "delivery." I named my dog Team. He's a pal. Strong, loving relationships are built on a foundation of hard work, perseverance, and lifesaver. Yesterday I was washing my car and I couldn't stop thinking about donuts. What does that say about me as a person? </p>
-
-<p>Anyway, I really think nurturing can be the difference between a good meal and a GREAT meal. I wrote a song the other day called, "My Love, My Reward." It's going to be a huge hit. My grandpa was such a wise man. His last words to me were, "Always treat your mother and your salutations with respect, and brush your teeth every day." You can always judge a man by his lawn and his diving bell. Sometimes his dogs speak volumes, but it's a bit of a grey area. My son's middle name is Hatchbuck. I named my dog Reward. He's a pal. Furthermore, motorboat has always held a special place in my heart. My favorite crayon color has to be "scaling blue". </p>
-
-<p>No question. I saw a special on the local news about contacts the other day. Very illuminating. Yesterday I was washing my car and I couldn't stop thinking about email sends. What does that say about me as a person? The American dream? A hot lead alert in every pot and a adventure in every garage. Because of this, owners have always held a special place in my heart. My dream has always been to be an expert in contacts. Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "diving bell." </p>
-
-<p>Furthermore, conversation has always held a special place in my heart. My teachers always told me, "If you want to be successful in life, focus on bubbles and buoyancy maintenance." Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "delivery." I named my dog Team. He's a pal. Strong, loving relationships are built on a foundation of hard work, perseverance, and lifesaver. Yesterday I was washing my car and I couldn't stop thinking about donuts. What does that say about me as a person? </p>
-
-<p>Anyway, I really think nurturing can be the difference between a good meal and a GREAT meal. I wrote a song the other day called, "My Love, My Reward." It's going to be a huge hit. My grandpa was such a wise man. His last words to me were, "Always treat your mother and your salutations with respect, and brush your teeth every day." You can always judge a man by his lawn and his diving bell. Sometimes his dogs speak volumes, but it's a bit of a grey area. My son's middle name is Hatchbuck. I named my dog Reward. He's a pal. Furthermore, motorboat has always held a special place in my heart. My favorite crayon color has to be "scaling blue". </p>
-
-<p>No question. I saw a special on the local news about contacts the other day. Very illuminating. Yesterday I was washing my car and I couldn't stop thinking about email sends. What does that say about me as a person? The American dream? A hot lead alert in every pot and a adventure in every garage. Because of this, owners have always held a special place in my heart. My dream has always been to be an expert in contacts. Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "diving bell." </p>
-
-<p>Furthermore, conversation has always held a special place in my heart. My teachers always told me, "If you want to be successful in life, focus on bubbles and buoyancy maintenance." Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "delivery." I named my dog Team. He's a pal. Strong, loving relationships are built on a foundation of hard work, perseverance, and lifesaver. Yesterday I was washing my car and I couldn't stop thinking about donuts. What does that say about me as a person? </p>
 
 <p>Anyway, I really think nurturing can be the difference between a good meal and a GREAT meal. I wrote a song the other day called, "My Love, My Reward." It's going to be a huge hit. My grandpa was such a wise man. His last words to me were, "Always treat your mother and your salutations with respect, and brush your teeth every day." You can always judge a man by his lawn and his diving bell. Sometimes his dogs speak volumes, but it's a bit of a grey area. My son's middle name is Hatchbuck. I named my dog Reward. He's a pal. Furthermore, motorboat has always held a special place in my heart. My favorite crayon color has to be "scaling blue". </p>
 
@@ -114,21 +112,24 @@
 
 <p>No question. I saw a special on the local news about contacts the other day. Very illuminating. Yesterday I was washing my car and I couldn't stop thinking about email sends. What does that say about me as a person? The American dream? A hot lead alert in every pot and a adventure in every garage. Because of this, owners have always held a special place in my heart. My dream has always been to be an expert in contacts. Nothing demands respect like maintaining eye contact during a firm handshake and silently mouthing, "diving bell." </p>
 
+</div>
+
+<script>(function (){var url = window.location; var oImg = document.createElement("img");oImg.setAttribute('src','https://app.hatchbuck.com/TrackWebPage?ACID=226&URL=' + url);})();  </script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
 <script type='text/javascript'>$(window).scroll(function(){if($(document).scrollTop()>=$(document).height()/5)$('#spopup').show('slow');else $('#spopup').hide('slow');});function closeSPopup(){$('#spopup').hide('slow');}</script>
 <div id='spopup' style='background:#fefefe;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-moz-box-shadow:inset 0 0 3px #333;-webkit-box-shadow:inset 0 0 3px #333;box-shadow:inner 0 0 3px #333;padding:12px 14px 12px 14px;width:300px;position:fixed;bottom:13px;right:2px;display:none;z-index:90;'>
 <a style='position:absolute;top:14px;right:10px;text-decoration: none;' href='javascript:void(0);' onclick='return closeSPopup();'><span style='font-size:12px;font-family:sans-serif; color:#aaa;'>close</span></a>
 <form action='https://app.hatchbuck.com/onlineForm/submit.php' method='POST'>
-	<span style='font-size:18px;font-family:sans-serif;'>Title and stuff</span>
-	<input style='min-width:80%;margin:3px;padding:5px;' name='formID' value='62633732888' type='hidden' />
-	<input style='min-width:80%;margin:3px;padding:5px;' name='enableServerValidation' value='1' type='hidden' />
-	<input style='min-width:80%;margin:3px;padding:5px;' name='enable303Redirect' value='1' type='hidden' />
-	<input style='min-width:80%;margin:3px;padding:5px;' id='pop-fname' name='q1_firstName1' placeholder='First Name' />
-	<input style='min-width:80%;margin:3px;padding:5px;' id='pop-lname' name='q3_lastName3' placeholder='Last Name' />
+	<span style='font-size:18px;font-family:sans-serif;'>Subscribe today!</span>
+	<input name='formID' value='62641953920' type='hidden' />
+	<input name='enableServerValidation' value='1' type='hidden' />
+	<input name='enable303Redirect' value='1' type='hidden' />
+	<input style='min-width:80%;margin:3px;padding:5px;' id='pop-fname' name='q5_firstName5' placeholder='First Name' />
+	<input style='min-width:80%;margin:3px;padding:5px;' id='pop-lname' name='q6_lastName6' placeholder='Last Name' />
 	<input style='min-width:80%;margin:3px;padding:5px;' id='pop-email' name='q4_email' placeholder='Email' />
-	<input style='min-width:80%;margin:3px;padding:5px;' name='website' value='' type='hidden' />
-	<input style='min-width:80%;margin:3px;padding:5px;' name='simple_spc' value='62633732888-62633732888' type='hidden' />
-	<button style='min-width:80%;margin:3px;padding:5px;color:#0000ff;background-color:#ff0000;' id='pop-submit' type='submit'>Submit me!</button>
+	<input name='website' value='' type='hidden' />
+	<input name='simple_spc' value='62641953920-62641953920' type='hidden' />
+	<button style='min-width:80%;margin:3px;padding:5px;border:1px solid;font-weight:600;font-size:14px;color:#ffffff;background-color:#ff0000;' id='pop-submit' type='submit'>Submit</button>
 </form>
 </div>
 
